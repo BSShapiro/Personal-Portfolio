@@ -6,6 +6,9 @@ body{
     margin: 0;
     background-color: #252627;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15vh;
 }
 
 .navbar{
@@ -48,6 +51,120 @@ body{
 .main-about-div{
     display: none;
 }
+
+.hacking-transition-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    width: 80vw;
+    height: fit-content;
+    background-color: #788585;
+}
+
+.hacking-transition-header{
+    color: white;
+    font-size: 2.5rem;
+    word-wrap: nowrap;
+}
+
+.hacking-transition-description{
+    height: fit-content;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    gap: 25px;
+    padding-bottom: 25px;
+}
+
+.hacking-transition-description>h3{
+    margin: 0;
+}
+
+.hacking-transition-description>h3,
+.hacking-transition-description>p
+{
+    color: white;
+}
+  
+  .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+  }
+  
+  .slides-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+    margin-top: 25%;
+  }
+  
+  .slide-arrow:hover {
+    opacity: 1;
+  }
+  
+  #slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  #slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+  
+  .slide {
+    width: 100%;
+    height: fit-content;
+    flex: 1 0 100%;
+  }
+  
+  
+  footer {
+    padding: 1em;
+    text-align: center;
+    background-color: #FFDFB9;
+  }
+  
+  footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  footer .heart {
+    color: #DC143C;
+  }
+
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
 
 @media (orientation: portrait) {
     .navbar{
