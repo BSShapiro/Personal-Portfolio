@@ -1,7 +1,14 @@
 const aboutBtnFunc = () => {
   const aboutBtn = document.getElementsByClassName("about-me-btn");
 
-  aboutBtn[0].addEventListener("click", () => {});
+  const projectsDiv = document.getElementsByClassName('main-project-div')
+
+  const aboutDiv = document.getElementsByClassName('main-about-div')
+
+  aboutBtn[0].addEventListener("click", () => {
+    projectsDiv[0].style.display = "none";
+    aboutDiv[0].style.display = "flex";
+  });
 };
 
 aboutBtnFunc();
@@ -10,7 +17,14 @@ aboutBtnFunc();
 const projectsBtnFunc = () => {
   const projectsBtn = document.getElementsByClassName("projects-btn");
 
-  projectsBtn[0].addEventListener("click", () => {});
+  const projectsDiv = document.getElementsByClassName('main-project-div')
+
+  const aboutDiv = document.getElementsByClassName('main-about-div')
+
+  projectsBtn[0].addEventListener("click", () => {
+    projectsDiv[0].style.display = "flex";
+    aboutDiv[0].style.display = "none";
+  });
 };
 
 projectsBtnFunc();
