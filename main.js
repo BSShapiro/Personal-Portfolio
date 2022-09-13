@@ -71,7 +71,7 @@ imageCarouselKetchup();
 
 const imageCarouselReactToDo = () => {
     const slidesContainer = document.getElementById("slides-container2");
-    const slide = document.querySelector(".slide1");
+    const slide = document.querySelector(".slide2");
     const prevButton = document.getElementById("slide-arrow-prev2");
     const nextButton = document.getElementById("slide-arrow-next2");
   
@@ -87,3 +87,23 @@ const imageCarouselReactToDo = () => {
 };
 
 imageCarouselReactToDo();
+
+
+const imageCarouselMVPForum = () => {
+    const slidesContainer = document.getElementById("slides-container3");
+    const slide = document.querySelector(".slide3");
+    const prevButton = document.getElementById("slide-arrow-prev3");
+    const nextButton = document.getElementById("slide-arrow-next3");
+  
+    nextButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+    });
+  
+    prevButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft -= slideWidth;
+    });
+}
+
+imageCarouselMVPForum();

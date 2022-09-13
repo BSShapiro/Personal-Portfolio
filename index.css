@@ -59,7 +59,8 @@ body{
 
 .hacking-transition-main,
 .ketchup-main,
-.react-todo-main{
+.react-todo-main,
+.mvp-forum-main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +73,8 @@ body{
 
 .hacking-transition-header,
 .ketchup-main>h2,
-.react-todo-main>h2{
+.react-todo-main>h2,
+.mvp-forum-main>h2{
     color: white;
     font-size: 2.5rem;
     word-wrap: nowrap;
@@ -80,20 +82,22 @@ body{
 
 .hacking-transition-description,
 .ketchup-description,
-.react-todo-description{
+.react-todo-description,
+.mvp-forum-description{
     height: fit-content;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     word-wrap: break-word;
-    gap: 25px;
+    gap: 10px;
     padding-bottom: 25px;
 }
 
 .hacking-transition-description>h3
 .ketchup-description>h3
-.react-todo-description{
+.react-todo-description>h3
+.mvp-forum-description>h3{
     margin: 0;
 }
 
@@ -102,7 +106,9 @@ body{
 .ketchup-description>h3,
 .ketchup-description>p,
 .react-todo-description>h3,
-.react-todo-description>p{
+.react-todo-description>p,
+.mvp-forum-description>h3,
+.mvp-forum-description>p{
     color: white;
     text-align: center;
 }
@@ -147,7 +153,8 @@ body{
   
   #slide-arrow-prev,
   #slide-arrow-prev1,
-  #slide-arrow-prev2 {
+  #slide-arrow-prev2,
+  #slide-arrow-prev3 {
     left: 0;
     padding-left: 0.25rem;
     border-radius: 0 2rem 2rem 0;
@@ -155,7 +162,8 @@ body{
   
   #slide-arrow-next,
   #slide-arrow-next1,
-  #slide-arrow-next2 {
+  #slide-arrow-next2,
+  #slide-arrow-next3 {
     right: 0;
     padding-left: 0.75rem;
     border-radius: 2rem 0 0 2rem;
@@ -163,7 +171,8 @@ body{
   
   .slide,
   .slide1,
-  .slide2 {
+  .slide2,
+  .slide3 {
     width: 100%;
     height: fit-content;
     flex: 1 0 100%;
