@@ -16,7 +16,7 @@ const projectsBtnFunc = () => {
 projectsBtnFunc();
 
 
-const imageCarousel = () => {
+const imageCarouselHackingTransition = () => {
   const slidesContainer = document.getElementById("slides-container");
   const slide = document.querySelector(".slide");
   const prevButton = document.getElementById("slide-arrow-prev");
@@ -33,5 +33,23 @@ const imageCarousel = () => {
   });
 };
 
-imageCarousel();
+imageCarouselHackingTransition();
 
+const imageCarouselKetchup = () => {
+    const slidesContainer = document.getElementById("slides-container1");
+    const slide = document.querySelector(".slide1");
+    const prevButton = document.getElementById("slide-arrow-prev1");
+    const nextButton = document.getElementById("slide-arrow-next1");
+  
+    nextButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+    });
+  
+    prevButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft -= slideWidth;
+    });
+  };
+
+imageCarouselKetchup();
