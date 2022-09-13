@@ -47,9 +47,14 @@ body{
 }
 
 .nav-btn:hover{
-    color: #ECA72C;
     transform: scale(1.7);
     cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-btn-selected{
+    color: #ECA72C;
+    transform: scale(1.7);
     text-decoration: underline;
 }
 

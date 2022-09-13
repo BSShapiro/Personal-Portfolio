@@ -16,7 +16,7 @@
             <h1>Brandon Shapiro</h1>
         </div>
         <div class="nav-btns-wrapper">
-            <div class="projects-btn nav-btn">Projects</div>
+            <div class="projects-btn nav-btn nav-btn-selected">Projects</div>
             <div class="about-me-btn nav-btn">About</div>
         </div>
     </div>
@@ -41,11 +41,25 @@
             </section>
             <div class="hacking-transition-description">
                 <h3>What is Hacking Transition?</h3>
-                <p>Hacking Transition is a web application for tracking transitioning service members' progress through transitioning out of the military. The application implements both an admin view as well as a student view. The admin view allows for anyone with admin rights to have access to view all the students' progress, send messages to individual students, add students, remove students, edit students, add cohorts, remove cohorts, and edits cohorts. The student view allows the students to update their individual progress, edit their own account, and message the admins.  </p>
+                <p>Hacking Transition is a web application for tracking transitioning service members' progress through
+                    transitioning out of the military. The application implements both an admin view as well as a
+                    student view. The admin view allows for anyone with admin rights to have access to view all the
+                    students' progress, send messages to individual students, add students, remove students, edit
+                    students, add cohorts, remove cohorts, and edits cohorts. The student view allows the students to
+                    update their individual progress, edit their own account, and message the admins. </p>
                 <h3>What technologies does Hacking Transition use? </h3>
-                <p>Hacking Transition uses React for its frontend, Node.js/Express for its server, and PostgreSQL for its database. As for the messaging aspect of the application, Socket.IO was used in order to implement real time messaging. Lastly, authentication was accomplished by using bcrypt.</p>
+                <p>Hacking Transition uses React for its frontend, Node.js/Express for its server, and PostgreSQL for
+                    its database. As for the messaging aspect of the application, Socket.IO was used in order to
+                    implement real time messaging. Lastly, authentication was accomplished by using bcrypt.</p>
                 <h3>What was I personally responsible for?</h3>
-                <p>This entire application was developed with a team of 6 of my fellow software engineers during my time at Galvanize Inc. We worked together in an AGILE environment to collaborate, design, build, and deploy our application. I personally was responsible for the authentication, instant messaging, and the create account modal. For the authentication, I utilized bcrypt in order to hash the password and then store it in the database. Upon an attempted login, the password sent to the server would then be compared to the hashed password in the database to see if it matched. As for the instant messaging, I worked in collaboration with a fellow software engineer to implement Socket.IO in order to get real time messaging implemented into our application.</p>
+                <p>This entire application was developed with a team of 6 of my fellow software engineers during my time
+                    at Galvanize Inc. We worked together in an AGILE environment to collaborate, design, build, and
+                    deploy our application. I personally was responsible for the authentication, instant messaging, and
+                    the create account modal. For the authentication, I utilized bcrypt in order to hash the password
+                    and then store it in the database. Upon an attempted login, the password sent to the server would
+                    then be compared to the hashed password in the database to see if it matched. As for the instant
+                    messaging, I worked in collaboration with a fellow software engineer to implement Socket.IO in order
+                    to get real time messaging implemented into our application.</p>
             </div>
         </div>
         <div class="ketchup-main">
@@ -66,11 +80,24 @@
             </section>
             <div class="ketchup-description">
                 <h3>What is Ketchup?</h3>
-                <p>Ketchup is a web application that allows you to post to different forums similar to Reddit. You can either create a new post in a sub forum that already exists or you can create an all new sub forum with your own banner image and name. It allows for not only posting text, but images as well.</p>
+                <p>Ketchup is a web application that allows you to post to different forums similar to Reddit. You can
+                    either create a new post in a sub forum that already exists or you can create an all new sub forum
+                    with your own banner image and name. It allows for not only posting text, but images as well.</p>
                 <h3>What technologies does Ketchup use?</h3>
-                <p>Ketchup uses React for its frontend, Node.js/Express for its server, and PostgreSQL for its database. Avatars and images are stored in an AWS S3 bucket, where their URL to access them is stored in the database. Finally, authentication was accomplished using bcrypt.</p>
+                <p>Ketchup uses React for its frontend, Node.js/Express for its server, and PostgreSQL for its database.
+                    Avatars and images are stored in an AWS S3 bucket, where their URL to access them is stored in the
+                    database. Finally, authentication was accomplished using bcrypt.</p>
                 <h3>What was I personally responsible for?</h3>
-                <p>This entire application was developed by a team of 4 other software engineers during my time at Galvanize Inc. During the development of this application, our team stuck to an AGILE methodology in order to quickly and efficiently build Ketchup. Personally, I was responsible for the authentication and images. For the authentication, I used brcypt to hash the password before it was stored in the database, then that hashed password is compared to the password sent from the frontend when a login was attempted. As for the images, an image is sent from the frontend using form data, that form data is then sent to the backend where a middleware called "multer" would handle the form data and allow that form data be sent to the S3 bucket using Amazon's AWS SDK. Finally, the image URL is stored in the database. I found doing it this way was more efficient than storing the images directly in the database, allowing the application to run much more efficiently.</p>
+                <p>This entire application was developed by a team of 4 other software engineers during my time at
+                    Galvanize Inc. During the development of this application, our team stuck to an AGILE methodology in
+                    order to quickly and efficiently build Ketchup. Personally, I was responsible for the authentication
+                    and images. For the authentication, I used brcypt to hash the password before it was stored in the
+                    database, then that hashed password is compared to the password sent from the frontend when a login
+                    was attempted. As for the images, an image is sent from the frontend using form data, that form data
+                    is then sent to the backend where a middleware called "multer" would handle the form data and allow
+                    that form data be sent to the S3 bucket using Amazon's AWS SDK. Finally, the image URL is stored in
+                    the database. I found doing it this way was more efficient than storing the images directly in the
+                    database, allowing the application to run much more efficiently.</p>
             </div>
         </div>
         <div class="react-todo-main">
@@ -89,11 +116,15 @@
             </section>
             <div class="react-todo-description">
                 <h3>What is React To Do List?</h3>
-                <p>React To Do List is exactly what the name implies, a to do list made using React. The application allows users to create a new to do, when the to do is created, the user can delete it, move it to completed or back to incomplete, and edit the to do.</p>
+                <p>React To Do List is exactly what the name implies, a to do list made using React. The application
+                    allows users to create a new to do, when the to do is created, the user can delete it, move it to
+                    completed or back to incomplete, and edit the to do.</p>
                 <h3>What technologies does React To Do List use?</h3>
-                <p>React To Do List uses React for its frontend, Node.js/Express for its backend, and PostgreSQL for its database.</p>
+                <p>React To Do List uses React for its frontend, Node.js/Express for its backend, and PostgreSQL for its
+                    database.</p>
                 <h3>What was I personally responsible for?</h3>
-                <p>I was responsible for the entire project from the frontend to the backend. This was my very first application using React for the frontend (class based components).</p>
+                <p>I was responsible for the entire project from the frontend to the backend. This was my very first
+                    application using React for the frontend (class based components).</p>
             </div>
         </div>
         <div class="mvp-forum-main">
@@ -113,15 +144,64 @@
             </section>
             <div class="mvp-forum-description">
                 <h3>What is MVP Forum?</h3>
-                <p>MVP Forum is my very first full stack web application. It allows users to create a profile and login. Once logged in they can create posts, edit their own posts, and delete their own posts.</p>
+                <p>MVP Forum is my very first full stack web application. It allows users to create a profile and login.
+                    Once logged in they can create posts, edit their own posts, and delete their own posts.</p>
                 <h3>What technologies does MVP Forum use?</h3>
-                <p>MVP Forum uses Vanilla JavaScript, HTML, and CSS for the frontend, Node.js/Express for the server, and PostgreSQL for the database.</p>
+                <p>MVP Forum uses Vanilla JavaScript, HTML, and CSS for the frontend, Node.js/Express for the server,
+                    and PostgreSQL for the database.</p>
                 <h3>What was I personally responsible for?</h3>
                 <p>I was responsible for the entire application from the frontend to the backend.</p>
             </div>
         </div>
     </div>
     <div class="main-about-div">
-        
+        <div>
+            <h3 align="left">Languages and Tools:</h3>
+            <p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                        alt="bootstrap" width="40" height="40" /> </a> <a href="https://www.w3schools.com/css/"
+                    target="_blank" rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        alt="css3" width="40" height="40" /> </a> <a href="https://expressjs.com" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                        alt="express" width="40" height="40" /> </a> <a href="https://firebase.google.com/"
+                    target="_blank" rel="noreferrer"> <img
+                        src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40"
+                        height="40" /> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img
+                        src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40"
+                        height="40" /> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img
+                        src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40"
+                        height="40" /> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        alt="html5" width="40" height="40" /> </a> <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="javascript" width="40" height="40" /> </a> <a href="https://www.linux.org/" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                        alt="linux" width="40" height="40" /> </a> <a href="https://www.mysql.com/" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                        alt="mysql" width="40" height="40" /> </a> <a href="https://nodejs.org" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                        alt="nodejs" width="40" height="40" /> </a> <a href="https://www.postgresql.org" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                        alt="postgresql" width="40" height="40" /> </a> <a href="https://postman.com" target="_blank"
+                    rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                        alt="postman" width="40" height="40" /> </a> <a href="https://reactjs.org/" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                        alt="react" width="40" height="40" /> </a> <a href="https://redux.js.org" target="_blank"
+                    rel="noreferrer"> <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                        alt="redux" width="40" height="40" /> </a> </p>
+
+            <p><img align="center"
+                    src="https://github-readme-stats.vercel.app/api/top-langs?username=bsshapiro&show_icons=true&locale=en&layout=compact"
+                    alt="bsshapiro" /></p>
+        </div>
     </div>
 </body>

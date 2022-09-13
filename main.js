@@ -1,6 +1,8 @@
 const aboutBtnFunc = () => {
   const aboutBtn = document.getElementsByClassName("about-me-btn");
 
+  const projectsBtn = document.getElementsByClassName("projects-btn");
+
   const projectsDiv = document.getElementsByClassName('main-project-div')
 
   const aboutDiv = document.getElementsByClassName('main-about-div')
@@ -8,6 +10,8 @@ const aboutBtnFunc = () => {
   aboutBtn[0].addEventListener("click", () => {
     projectsDiv[0].style.display = "none";
     aboutDiv[0].style.display = "flex";
+    aboutBtn[0].classList.add("nav-btn-selected");
+    projectsBtn[0].classList.remove("nav-btn-selected")
   });
 };
 
@@ -17,6 +21,8 @@ aboutBtnFunc();
 const projectsBtnFunc = () => {
   const projectsBtn = document.getElementsByClassName("projects-btn");
 
+  const aboutBtn = document.getElementsByClassName("about-me-btn");
+
   const projectsDiv = document.getElementsByClassName('main-project-div')
 
   const aboutDiv = document.getElementsByClassName('main-about-div')
@@ -24,6 +30,8 @@ const projectsBtnFunc = () => {
   projectsBtn[0].addEventListener("click", () => {
     projectsDiv[0].style.display = "flex";
     aboutDiv[0].style.display = "none";
+    aboutBtn[0].classList.remove('nav-btn-selected');
+    projectsBtn[0].classList.add('nav-btn-selected');
   });
 };
 
