@@ -182,4 +182,13 @@ body{
     .header-wrapper>h1{
         font-size: 25px;
     }
+    .main-project-div{
+        width: 100%;
+    }
+    .main-project-div>div{
+        width: 100%;
+    }
+    .hacking-transition-main>h2{
+        text-align: center;
+    }
 }
