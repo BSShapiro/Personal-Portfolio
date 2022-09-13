@@ -55,6 +55,8 @@ body{
 
 .main-about-div{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hacking-transition-main,
@@ -75,7 +77,7 @@ body{
 .ketchup-main>h2,
 .react-todo-main>h2,
 .mvp-forum-main>h2{
-    color: white;
+    color: #F7F4F3;
     font-size: 2.5rem;
     word-wrap: nowrap;
 }
@@ -109,7 +111,7 @@ body{
 .react-todo-description>p,
 .mvp-forum-description>h3,
 .mvp-forum-description>p{
-    color: white;
+    color: #F7F4F3;
     text-align: center;
 }
   
@@ -136,7 +138,7 @@ body{
     top: 0;
     bottom: 0;
     height: 4rem;
-    background-color: white;
+    background-color: #F7F4F3;
     border: none;
     width: 2rem;
     font-size: 3rem;
