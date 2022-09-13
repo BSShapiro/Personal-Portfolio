@@ -73,6 +73,21 @@
                 <p>This entire application was developed by a team of 4 other software engineers during my time at Galvanize Inc. During the development of this application, our team stuck to an AGILE methodology in order to quickly and efficiently build Ketchup. Personally, I was responsible for the authentication and images. For the authentication, I used brcypt to hash the password before it was stored in the database, then that hashed password is compared to the password sent from the front end when a login was attempted. As for the images, an image is sent from the front end using form data, that form data is then sent to the backend where a middleware called "multer" would handle the form data and allow that form data be sent to the S3 bucket using Amazon's AWS SDK. Finally, the image URL is stored in the database. I found doing it this way was more efficient than storing the images directly in the database, allowing the application to run much more efficiently.</p>
             </div>
         </div>
+        <div class="react-todo-main">
+            <h2>React To Do List</h2>
+            <section class="slider-wrapper">
+                <button class="slide-arrow" id="slide-arrow-prev2">
+                    &#8249;
+                </button>
+                <button class="slide-arrow" id="slide-arrow-next2">
+                    &#8250;
+                </button>
+                <ul class="slides-container" id="slides-container2">
+                    <li class="slide2"><img src='ReactToDo/Screen Shot 2022-09-12 at 5.45.07 PM.png' /></li>
+                    <li class="slide2"><img src='ReactToDo/Screen Shot 2022-09-13 at 12.22.24 AM.png' /></li>
+                </ul>
+            </section>
+        </div>
     </div>
     <div class="main-about-div">
 

@@ -67,3 +67,23 @@ const imageCarouselKetchup = () => {
   };
 
 imageCarouselKetchup();
+
+
+const imageCarouselReactToDo = () => {
+    const slidesContainer = document.getElementById("slides-container2");
+    const slide = document.querySelector(".slide1");
+    const prevButton = document.getElementById("slide-arrow-prev2");
+    const nextButton = document.getElementById("slide-arrow-next2");
+  
+    nextButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+    });
+  
+    prevButton.addEventListener("click", () => {
+      const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft -= slideWidth;
+    });
+};
+
+imageCarouselReactToDo();
