@@ -130,3 +130,13 @@ const imageCarouselMVPForum = () => {
 }
 
 imageCarouselMVPForum();
+
+const email = () => {
+    const emailIcon = document.getElementsByClassName('email-auto');
+
+    emailIcon[0].addEventListener('click', () => {
+        window.location.href = "mailto:bsshapiro7@gmail.com"
+    })
+}
+
+email();
