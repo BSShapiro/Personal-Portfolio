@@ -379,4 +379,8 @@ img{
     .about-intro-main{
         height: 85vh;
     }
+    .about-intro{
+        padding: 1rem;
+        height: 70%;
+    }
 }
