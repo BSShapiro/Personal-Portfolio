@@ -306,6 +306,13 @@ img{
     height: 100%;
 }
 
+.icons-grid>a{
+    transition: all 1s ease;
+}
+
+.icons-grid>a:hover{
+    transform: scale(1.75);
+}
 
 
 @media (orientation: portrait) {
