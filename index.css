@@ -16,7 +16,7 @@ body{
     background: #F7F4F3;
     margin: 0;
     padding: 0;
-    height: 15vh;
+    height: 20vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ body{
 .nav-btns-wrapper{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 70px;
     padding: 15px;
 }
 
@@ -369,5 +369,11 @@ img{
         grid-template-rows: .5fr .5fr .5fr;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
+    }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .navbar{
+        height: 50vh;
     }
 }
