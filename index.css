@@ -376,4 +376,7 @@ img{
     .navbar{
         height: 50vh;
     }
+    .about-intro-main{
+        height: 85vh;
+    }
 }
