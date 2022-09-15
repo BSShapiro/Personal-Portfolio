@@ -7,11 +7,19 @@ const aboutBtnFunc = () => {
 
   const aboutDiv = document.getElementsByClassName('main-about-div')
 
-  aboutBtn[0].addEventListener("click", () => {
-    projectsDiv[0].style.display = "none";
-    aboutDiv[0].style.display = "flex";
+  aboutBtn[0].addEventListener("click", async () => {
     aboutBtn[0].classList.add("nav-btn-selected");
-    projectsBtn[0].classList.remove("nav-btn-selected")
+    projectsBtn[0].classList.remove("nav-btn-selected");
+    aboutDiv[0].style.opacity = '0'
+    aboutDiv[0].style.display = 'flex'
+    await setTimeout(() => {
+        projectsDiv[0].style.opacity = '0';
+    }, 1)
+    projectsDiv[0].style.display = 'none';
+    await setTimeout (() => {
+        aboutDiv[0].style.opacity = "1";
+    }, 1);
+
   });
 };
 
@@ -27,11 +35,18 @@ const projectsBtnFunc = () => {
 
   const aboutDiv = document.getElementsByClassName('main-about-div')
 
-  projectsBtn[0].addEventListener("click", () => {
-    projectsDiv[0].style.display = "flex";
-    aboutDiv[0].style.display = "none";
+  projectsBtn[0].addEventListener("click", async () => {
     aboutBtn[0].classList.remove('nav-btn-selected');
     projectsBtn[0].classList.add('nav-btn-selected');
+    projectsDiv[0].style.opacity = 0;
+    projectsDiv[0].style.display = 'flex';
+    await setTimeout(() => {
+        aboutDiv[0].style.opacity = '0';
+    }, 1)
+    aboutDiv[0].style.display = 'none';
+    await setTimeout (() => {
+        projectsDiv[0].style.opacity = "1";
+    }, 1);
   });
 };
 
