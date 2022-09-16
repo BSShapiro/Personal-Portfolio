@@ -286,7 +286,7 @@ img{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding: 6px;
 }
 
 .footer>*{
@@ -299,11 +299,6 @@ img{
 .footer>*:hover{
     cursor: pointer;
     transform: scale(1.4);
-}
-
-.footer>*>*{
-    width: 100%;
-    height: 100%;
 }
 
 .icons-grid>a{
