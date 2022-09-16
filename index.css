@@ -379,7 +379,14 @@ img{
         height: 50vh;
     }
     .about-intro-main{
-        height: 90vh;
+        height: 100vh;
+    }
+    .about-img{
+        width: auto;
+        object-fit: cover;
+    }
+    .about-img-wrapper{
+        width: 40%;
     }
     .about-intro{
         padding: 1rem;
