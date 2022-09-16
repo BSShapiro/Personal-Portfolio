@@ -149,13 +149,11 @@ function scrollToTop() {
       document.documentElement.scrollTop > 100
     ) {
       scrollToTop.style.display = "block";
-      scrollToTop.style.opacity = "0.5"
       // await setTimeout(() => {
       //   scrollToTop.style.opacity = ('.5')
       // }, 250)
       
     } else {
-      scrollToTop.style.opacity = ('0');
       scrollToTop.style.display = "none";
     }
   }
